@@ -19,5 +19,6 @@ def rotate_2d_matrix(matrix):
     for x in range(n):
         for k in range(int(n / 2)):
             tmp = matrix[x][k]
+
             matrix[x][k] = matrix[x][n-1-k]
             matrix[x][n-1-k] = tmp
